@@ -2,136 +2,201 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-<section class="container">
-    <div class="text-section">
-        <h2>What do we offer</h2>
-    </div>
-    <div class="highlight-stroke"></div>
-    <div class="content-wrapper">
-        <div class="content advantages">
-            <img class="icon" src="./images/support.png" alt="support">
-            <p>Support 24/7</p>
-        </div>
-        <div class="content advantages">
-            <img class="icon" src="./images/communication.png" alt="communication">
-            <p>Communicate directly</p>
-        </div>
-        <div class="content advantages">
-            <img class="icon" src="./images/booking.png" alt="booking">
-            <p>Book online</p>
-        </div>
-        <div class="content advantages">
-            <img class="icon" src="./images/reviews.png" alt="reviews">
-            <p>Real guest reviews</p>
-        </div>
-    </div>
-</section>
-<section class="section-homes container">
-    <div class="text-section">
-        <h2>Homes guests loves</h2>
-    </div>
-    <div class="content-wrapper -margin-top">
-        <div class="content">
-            <img class="img-content" src="./images/hotel.png" alt="hotel">
-            <p class="name">Hotel Leopold</p>
-            <p class="location">Saint Petersburg, Russia</p>
-        </div>
-        <div class="content">
-            <img class="img-content" src="./images/apartment.png" alt="apartment">
-            <p class="name">Apartment Sunshine</p>
-            <p class="location">Santa Cruz de Tenerife, Spain</p>
-        </div>
-        <div class="content">
-            <img class="img-content" src="./images/villa.png" alt="villa">
-            <p class="name">Villa Kunerad</p>
-            <p class="location">Vysokie Tatry, Slowakia</p>
-        </div>
-        <div class="content">
-            <img class="img-content" src="./images/hostel.png" alt="hostel">
-            <p class="name">Hostel Friendship</p>
-            <p class="location">Berlin, Germany</p>
-        </div>
-        <img class="arrow-right" src="./images/arrow-right.png" alt="arrow-right">
-    </div>
-</section>
-<section class="section-destinations container">
-    <div class="text-section">
-        <h2>The best destinations</h2>
-        <div class="tabs -margin-top">
-            <div class="tab-regions"><p>Regions</p></div>
-            <div class="tab-cities"><p>Cities</p></div>
-            <div class="tab-places"><p>Places of interest</p></div>
-        </div>
-        <div class="content-wrapper">
-            <div class="content">
-                <img class="img-content destination" src="./images/maldives.png" alt="maldives">
-                <div class="book">
-                    <button class="reservation">Book now</button>
-                </div>
-                <p class="name">Maldives</p>
-            </div>
-            <div class="content">
-                <img class="img-content destination" src="./images/spain.png" alt="spain">
-                <div class="book">
-                    <button class="reservation">Book now</button>
-                </div>
-                <p class="name">Spain</p>
-            </div>
-            <div class="content">
-                <img class="img-content destination" src="./images/norway.png" alt="norway">
-                <div class="book">
-                    <button class="reservation">Book now</button>
-                </div>
-                <p class="name">Norway</p>
-            </div>
-            <div class="content">
-                <img class="img-content destination" src="./images/island.png" alt="island">
-                <div class="book">
-                    <button class="reservation">Book now</button>
-                </div>
-                <p class="name">Island</p>
-            </div>
-        </div>
-    </div>
-    <div class="arrow-down"><img src="./images/arrow-down.png" alt="arrow-down"></div>
-</section>
-<footer>
-    <div class="container">
-        <div class="wrapper__container">
-            <div class="list-of-links">
-                <ul>
-                    <li><p>About</p></li>
-                    <li><a href="">How Triphouse works</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Privacy</a></li>
-                    <li><a href="">Terms</a></li>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__container _container">
+            <a href="" class="header__logo"> <img src="./images/logo_vector.svg" alt="logo"></a>
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link">Stays</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link">Attractions</a>
+                    </li>
                 </ul>
-            </div>
-            <div class="list-of-links">
-                <ul>
-                    <li><p>Property types</p></li>
-                    <li><a href="">Guest houses</a></li>
-                    <li><a href="">Hotels</a></li>
-                    <li><a href="">Apartments</a></li>
-                    <li><a href="">Villas</a></li>
-                    <li><a href="">Holiday homes</a></li>
-                    <li><a href="">Hostels</a></li>
+                <ul class="menu__icons">
+                    <li class="night-icon">
+                        <img src="./images/Night.svg" alt="night icon">
+                    </li>
+                    <li class="account-icon">
+                        <img src="./images/AccountCircle.svg" alt="account icon">
+                    </li>
                 </ul>
-            </div>
-            <div class="list-of-links">
-                <ul>
-                    <li><p>Support</p></li>
-                    <li><a href="">Contact Customer Service</a></li>
-                    <li><a href="">FAQ</a></li>
-                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="page">
+        <div class="page__main-block main-block">
+            <div class="main-block__container _container">
+                <h1 class="main-block__title">Discover stays <br>
+                    to live, work or just relax</h1>
+                <div class="main-block__search">
+                    <div class="search_destination"></div>
+                    <div class="search_check-in"></div>
+                    <div class="search_check-out"></div>
+                    <div class="search_condition"></div>
+                    <div class="search_button"></div>
+                </div>
+                <div class="main-block__apps">
+                    <a href=""><img src="./images/svg_google-play-badge.svg" alt="google play"></a>
+                    <a href=""><img src="./images/svg_app_store.svg" alt="app store"></a>
+                </div>
             </div>
         </div>
-        <div class="copyright"><p>&copy; 2020 Triphouse, Inc. All rights reserved</p></div>
-    </div>
-</footer>
+        <section class="page__advantages advantages">
+            <div class="advantages__container _container">
+                <div class="_section__title">
+                    <h2>What do we offer</h2>
+                </div>
+                <div class="section__body">
+                    <div class="advantages__content _content">
+                        <div class="content__item">
+                            <img class="content__icon" src="./images/support.png" alt="support">
+                            <p>Support 24/7</p>
+                        </div>
+                    </div>
+                    <div class="advantages__content _content">
+                        <div class="content__item">
+                            <img class="content__icon" src="./images/communication.png" alt="communication">
+                            <p>Communicate directly</p>
+                        </div>
+                    </div>
+                    <div class="advantages__content _content">
+                        <div class="content__item">
+                            <img class="content__icon" src="./images/booking.png" alt="booking">
+                            <p>Book online</p>
+                        </div>
+                    </div>
+                    <div class="advantages__content _content">
+                        <div class="content__item">
+                            <img class="content__icon" src="./images/reviews.png" alt="reviews">
+                            <p>Real guest reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page__homes homes">
+            <div class="homes__container _container">
+                <div class="_section__title">
+                    <h2>Homes guests loves</h2>
+                </div>
+                <div class="section__body">
+                    <div class="homes__content _content">
+                        <div class="content__item">
+                            <img class="content__img" src="./images/hotel.png" alt="hotel">
+                            <p class="place-name">Hotel Leopold</p>
+                            <p class="place-location">Saint Petersburg, Russia</p>
+                        </div>
+                    </div>
+                    <div class="homes__content _content">
+                        <div class="content__item">
+                            <img class="content__img" src="./images/apartment.png" alt="apartment">
+                            <p class="place-name">Apartment Sunshine</p>
+                            <p class="place-location">Santa Cruz de Tenerife, Spain</p>
+                        </div>
+                    </div>
+                    <div class="homes__content _content">
+                        <div class="content__item">
+                            <img class="content__img" src="./images/villa.png" alt="villa">
+                            <p class="place-name">Villa Kunerad</p>
+                            <p class="place-location">Vysokie Tatry, Slowakia</p>
+                        </div>
+                    </div>
+                    <div class="homes__content _content">
+                        <div class="content__item">
+                            <img class="content__img" src="./images/hostel.png" alt="hostel">
+                            <p class="place-name">Hostel Friendship</p>
+                            <p class="place-location">Berlin, Germany</p>
+                        </div>
+                    </div>
+                    <img class="arrow-right" src="./images/arrow-right.png" alt="arrow-right">
+                </div>
+            </div>
+        </section>
+        <section class="page__destinations destinations">
+            <div class="destinations__container _container">
+                <div class="_section__title">
+                    <h2>The best destinations</h2>
+                </div>
+                <div class="tabs">
+                    <div class="tab-regions"><p>Regions</p></div>
+                    <div class="tab-cities"><p>Cities</p></div>
+                    <div class="tab-places"><p>Places of interest</p></div>
+                </div>
+                <div class="section__body-destinations section__body">
+                    <div class="destinations__content _content">
+                        <div class="content__item">
+                            <img class="content__img reservation__img" src="./images/maldives.png" alt="maldives">
+                            <div class="reservation__booking"></div>
+                            <div class="reservation__shadow"></div>
+                            <p class="place-name">Maldives</p>
+                        </div>
+                    </div>
+                    <div class="destinations__content _content">
+                        <div class="content__item">
+                            <img class="content__img booking" src="./images/spain.png" alt="spain">
+                            <p class="place-name">Spain</p>
+                        </div>
+                    </div>
+                    <div class="destinations__content _content">
+                        <div class="content__item">
+                            <img class="content__img booking" src="./images/norway.png" alt="norway">
+                            <p class="place-name">Norway</p>
+                        </div>
+                    </div>
+                    <div class="destinations__content _content">
+                        <div class="content__item">
+                            <img class="content__img booking" src="./images/island.png" alt="island">
+                            <p class="place-name">Island</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-down"><img src="./images/arrow-down.png" alt="arrow-down"></div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__container _container">
+            <div class="footer__body">
+                <div class="footer__content">
+                    <ul>
+                        <li><p>About</p></li>
+                        <li><a href="">How Triphouse works</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <ul>
+                        <li><p>Property types</p></li>
+                        <li><a href="">Guest houses</a></li>
+                        <li><a href="">Hotels</a></li>
+                        <li><a href="">Apartments</a></li>
+                        <li><a href="">Villas</a></li>
+                        <li><a href="">Holiday homes</a></li>
+                        <li><a href="">Hostels</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <ul>
+                        <li><p>Support</p></li>
+                        <li><a href="">Contact Customer Service</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright"><p>&copy; 2020 Triphouse, Inc. All rights reserved</p></div>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
