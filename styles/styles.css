@@ -6,7 +6,9 @@
     border: 0;
     box-sizing: border-box;
 }
-
+:active, :hover, :focus {
+    outline: none;
+}
 a {
     text-decoration: none;
     color: #FFFFFF;
@@ -126,8 +128,13 @@ html, body {
     margin-bottom: 145px;
 }
 
+.main-block__form {
+}
+
 .main-block__search {
+    display: flex;
     height: 64px;
+    font-size: 18px;
     width: 100%;
     background-color: #FFFFFF;
     border: 3px #F3F3F4 solid;
@@ -136,18 +143,155 @@ html, body {
 }
 
 .search_destination {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+
+}
+
+.search_destination input {
+    width: 100%;
+    font-size: 18px;
+    color: #383838;
+    font-family: Roboto, sans-serif;
+    margin: 0 24px;
+    padding-left: 5px;
+}
+
+.label__destinations-text {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    transform: translate(0, 15px);
+}
+
+.search_destination:focus-within {
+    border: 3px #F5BD41 solid;
+    margin: -3px;
+}
+
+.search_destination input:focus + .label__destinations-text {
+    transform: translate(0, -50px);
+    color: #FFFFFF;
+    background-color: rgba(56, 56, 56, 0.5);
+    border-radius: 8px;
+}
+.search_destination input:valid + .label__destinations-text{
+    transform: translate(0, -50px);
+    color: #FFFFFF;
+    background-color: rgba(56, 56, 56, 0.5);
+    border-radius: 8px;
+}
+.search-dates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 10px;
+}
+
+.search-dates:focus-within {
+    border: 3px #F5BD41 solid;
+    margin: -3px;
 }
 
 .search_check-in {
+    position: relative;
+}
+
+.check-in__label {
+    background-color: rgba(56, 56, 56, 0.5);
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: -64px;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.search_check-out {
+    position: relative;
+}
+
+.check-out__label {
+    background-color: rgba(56, 56, 56, 0.5);
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: -64px;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.check-in-day,
+.check-out-day,
+.check-out-day option,
+.check-in-day option,
+.check-in-month,
+.check-in-month option,
+.check-out-month,
+.check-out-month option {
+    font-size: 18px;
+    color: #383838;
+    font-family: Roboto, sans-serif;
+    text-align: center;
 }
 
 .search_check-out {
 }
 
 .search_condition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 10px;
+}
+
+.search_condition:focus-within {
+    border: 3px #F5BD41 solid;
+    margin: -3px;
+}
+
+.adults-number {
+}
+
+.condition-input {
+    width: 20px;
+    font-size: 18px;
+    color: #383838;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+.children-number {
+}
+
+.room-number {
 }
 
 .search_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3077C6;
+    border-radius: 8px;
+    border: 3px #3077C6 solid;
+    margin: -3px -3px -3px 3px;
+}
+
+.search_button button {
+    background-color: #3077C6;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 10px 57px;
 
 }
 
@@ -263,12 +407,51 @@ html, body {
     margin-top: 48px
 }
 
-.reservation__img{
+.reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.reservation__booking{
+
+.reservation__shadow {
+    min-width: 295px;
+    min-height: 295px;
+    position: relative;
+    z-index: -2;
+    background-color: rgba(56, 56, 56, 0.4);
+    box-shadow: 0 4px 70px 0 rgba(56, 56, 56, 0.5) inset;
 }
-.reservation__shadow{
+
+.reservation__img {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    z-index: 0;
 }
+
+.reservation__booking {
+    position: absolute;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px #3077C6 solid;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 0 24px;
+    z-index: -1;
+}
+
+.reservation__booking a {
+
+    font-size: 18px;
+    color: #3077C6;
+    line-height: 48px;
+}
+
+.reservation__img:hover {
+    z-index: -3;
+}
+
 /*---------Footer-----------------------------------------------------------------*/
 .footer {
     background-color: #10367C;
