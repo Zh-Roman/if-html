@@ -37,7 +37,7 @@ html, body {
     font-family: Roboto, sans-serif;
 }
 
-/*--------------------------------------------------------------------------*/
+    /*--------------------------------------------------------------------------*/
 .wrapper {
     min-height: 100%;
     overflow: hidden;
@@ -554,20 +554,24 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
 }
-.reviews__section__body{
+
+.reviews__section__body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 .reviews__content {
-display: grid;
+    display: grid;
 }
 
 .reviews__content__item {
     position: relative;
 }
-.reviews_img{
+
+.reviews_img {
     position: relative;
 }
+
 .reviews_price {
     display: flex;
     position: absolute;
@@ -655,7 +659,7 @@ display: grid;
 }
 
 .person_info {
-margin-left: 24px;
+    margin-left: 24px;
 }
 
 .person_place {
@@ -672,15 +676,18 @@ margin-left: 24px;
     color: #BFBFBF;
     margin-left: 5px;
 }
-.comment{
+
+.comment {
     line-height: 21px;
 }
-.reviews_arrow-right{
+
+.reviews_arrow-right {
     position: absolute;
     left: 100%;
     top: 25%;
     transform: translateX(-50%);
 }
+
 /*---------Footer-----------------------------------------------------------------*/
 .footer {
     background-color: #10367C;
@@ -690,9 +697,15 @@ margin-left: 24px;
 .footer__body {
     display: flex;
 }
-
+.footer__logo{
+    display: none;
+    fill: #FFFFFF;
+    height: 19px;
+    width: 98px;
+}
 .footer__content {
     flex: 0 1 33.333%;
+    justify-content: space-between;
 }
 
 .footer__content p {
