@@ -11,13 +11,23 @@
 <div class="wrapper">
     <header class="header">
         <div class="header__container _container">
-            <a href="">
-                <svg class="header__logo">
-                    <use href="./images/SVG/Sprite.svg#logo_vector"></use>
-                </svg>
-            </a>
+            <div class="header__logo">
+                <a href="">
+                    <svg class="header__logo-svg">
+                        <use href="./images/SVG/Sprite.svg#logo_vector"></use>
+                    </svg>
+                </a>
+            </div>
             <nav class="header__menu menu">
                 <ul class="menu__list">
+                    <li class="menu__item">
+                        <input type="checkbox" id="menu_check" class="burger-checkbox">
+                        <label for="menu_check"></label>
+                            <div class="burger-line"></div>
+                            <div class="burger-line"></div>
+                            <div class="burger-line"></div>
+                            <div class="burger-line"></div>
+                    </li>
                     <li class="menu__item">
                         <a class="menu__link">Stays</a>
                     </li>
@@ -36,6 +46,11 @@
                             <use href="./images/SVG/Sprite.svg#account_circle"></use>
                         </svg>
                     </li>
+                    <li class="menu-burger">
+                        <svg class="menu-burger-svg">
+                            <use href="./images/SVG/Sprite.svg#menu-burger"></use>
+                        </svg>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -48,63 +63,70 @@
                 <div class="main-block__form">
                     <form action="#" method="get" class="main-block__search">
                         <div class="search_destination">
-                            <input id="search_destination" type="text" required name="destinations">
+                            <svg class="searching-svg">
+                                <use href="./images/SVG/Sprite.svg#searching"></use>
+                            </svg>
+                            <input class="placeholder-color" placeholder="Your destination or hotel name"
+                                   id="search_destination" type="text" required name="destinations">
                             <label for="search_destination" class="label__destinations-text">Your destination or hotel
                                 name</label>
                         </div>
                         <div class="search-dates">
                             <div class="search_check-in" id="check-in">
-                                <select class="check-in-day" name="check-in-day">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                    <option value="14">14</option>
-                                    <option value="15">15</option>
-                                    <option value="16">16</option>
-                                    <option value="17">17</option>
-                                    <option value="18">18</option>
-                                    <option value="19">19</option>
-                                    <option value="20">20</option>
-                                    <option value="21">21</option>
-                                    <option value="22">22</option>
-                                    <option value="23">23</option>
-                                    <option value="24">24</option>
-                                    <option value="25">25</option>
-                                    <option value="26">26</option>
-                                    <option value="27">27</option>
-                                    <option value="28">28</option>
-                                    <option value="29">29</option>
-                                    <option value="30">30</option>
-                                    <option value="31">31</option>
-                                </select>
-                                <select class="check-in-month" name="check-in-month">
-                                    <option value="January">Jan.</option>
-                                    <option value="February">Feb.</option>
-                                    <option value="March">Mar.</option>
-                                    <option value="April">Apr.</option>
-                                    <option value="May">May</option>
-                                    <option value="June">Jun.</option>
-                                    <option value="July">Jul.</option>
-                                    <option value="August">Aug.</option>
-                                    <option value="September">Sep.</option>
-                                    <option value="October">Oct.</option>
-                                    <option value="November">Nov.</option>
-                                    <option value="December">Dec.</option>
-                                </select>
+                                <div class="check-in-lists">
+                                    <select class="check-in-day" name="check-in-day">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    <select class="check-in-month" name="check-in-month">
+                                        <option value="January">Jan.</option>
+                                        <option value="February">Feb.</option>
+                                        <option value="March">Mar.</option>
+                                        <option value="April">Apr.</option>
+                                        <option value="May">May</option>
+                                        <option value="June">Jun.</option>
+                                        <option value="July">Jul.</option>
+                                        <option value="August">Aug.</option>
+                                        <option value="September">Sep.</option>
+                                        <option value="October">Oct.</option>
+                                        <option value="November">Nov.</option>
+                                        <option value="December">Dec.</option>
+                                    </select>
+                                </div>
                                 <div class="check-in__label"><label for="check-in">Check-in</label></div>
                             </div>
                             <span>&nbsp;—&nbsp;</span>
                             <div class="search_check-out" id="check-out">
+                                <div class="check-out-lists">
                                 <select class="check-out-day" name="check-out-day">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -152,6 +174,7 @@
                                     <option value="November">Nov.</option>
                                     <option value="December">Dec.</option>
                                 </select>
+                                </div>
                                 <div class="check-out__label"><label for="check-out">Check-out</label></div>
                             </div>
                         </div>
