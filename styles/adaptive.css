@@ -7,12 +7,6 @@
         margin-top: 0;
         padding: 12px 16px;
     }
-
-    .menu-burger-svg {
-        display: block;
-        margin-left: 16px;
-    }
-
     .night-svg {
         margin-left: 16px;
         height: 16px;
@@ -35,6 +29,80 @@
         display: none;
     }
 
+    .burger-btn {
+        display: block;
+        margin-left: 16px;
+        position: relative;
+        height: 24px;
+        width: 24px;
+    }
+
+    .burger_action {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    .burger-line {
+        position: absolute;
+        top: 4px;
+        right: 0;
+        width: 24px;
+        height: 2px;
+        background-color: #FFFFFF;
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .second,
+    .third {
+        top: 11px;
+    }
+
+    .fourth {
+        top: 18px;
+    }
+
+    .burger_menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 120%;
+        left: 0;
+        transform: translateX(-75%);
+        text-align: right;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .burger_menu a {
+        text-decoration: underline;
+        text-decoration-color: #F5BD41;
+        text-decoration-thickness: 2px;
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    .burger-checkbox:checked ~ .burger_menu{
+        height: 50px;
+    }
+
+    .burger-checkbox:checked ~ .first{
+        display: none;
+    }
+    .burger-checkbox:checked ~ .second{
+        transform: rotate(45deg);
+    }
+    .burger-checkbox:checked ~ .third{
+        transform: rotate(-45deg);
+    }
+    .burger-checkbox:checked ~ .fourth{
+        display: none;
+    }
     .main-block__container {
         min-height: 100vh;
         padding: 80px 16px 40px;
@@ -174,11 +242,13 @@
         display: flex;
         flex-direction: column;
     }
-    .children-number{
+
+    .children-number {
         border-left: 1px solid #BFBFBF;
         border-right: 1px solid #BFBFBF;
     }
-    .condition-input{
+
+    .condition-input {
         padding: -6px;
         order: 2;
         font-weight: 500;
@@ -191,11 +261,11 @@
         border: 4px #F5BD41 solid;
         border-radius: 8px;
     }
-    .search_button button{
+
+    .search_button button {
         font-size: 19px;
         line-height: 22px;
     }
-
 
 
     ._section__title {
@@ -210,38 +280,47 @@
     .section__body {
         margin: 32px 0 0;
     }
-    .section__body .homes__content:nth-of-type(1n+3){
+
+    .section__body .homes__content:nth-of-type(1n+3) {
         display: none;
 
     }
-    .section__body .homes__content:first-of-type{
+
+    .section__body .homes__content:first-of-type {
         margin-right: 16px;
     }
-    .homes__content{
+
+    .homes__content {
         padding: 0;
         flex: 0 1 50%;
     }
-    .place-name{
+
+    .place-name {
         margin-top: 8px;
         font-size: 12px;
         line-height: 14px;
     }
-    .place-location{
+
+    .place-location {
         margin-top: 4px;
         font-size: 12px;
         line-height: 14px;
 
     }
-    .arrow_svg{
+
+    .arrow_svg {
         height: 35px;
         width: 35px;
     }
-    .arrow-right{
+
+    .arrow-right {
         transform: translateX(-50%);
     }
+
     .advantages__container {
         padding: 40px 73px;
     }
+
     .advantages__section__body {
         display: flex;
         flex-direction: column;
