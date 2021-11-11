@@ -683,10 +683,6 @@ html, body {
     font-size: 14px;
 }
 
-.subject_body {
-
-}
-
 .subject_person {
     display: flex;
     align-items: center;
@@ -727,6 +723,17 @@ html, body {
     left: 100%;
     top: 25%;
     transform: translateX(-50%);
+}
+
+.nav_circles {
+    display: none;
+    line-height: 10px;
+}
+
+.nav_circles_svg {
+    fill: #EAF0F9;
+    height: 8px;
+    width: 56px;
 }
 
 /*---------Footer-----------------------------------------------------------------*/

@@ -292,6 +292,10 @@
 
     }
 
+    .section__body .reviews__content:nth-of-type(1n+2) {
+        display: none;
+    }
+
     .section__body .homes__content:first-of-type,
     .section__body .destinations__content:first-of-type {
         margin-right: 16px;
@@ -302,7 +306,37 @@
         padding: 0;
         flex: 0 1 50%;
     }
-
+    .reviews__section__body{
+        display: flex;
+    }
+    .reviews__content{
+        padding: 0;
+        flex: 0 1 100%;
+    }
+    .reviews_price{
+        display: none;
+    }
+    .reviews_subject{
+        padding: 12px 0 32px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .subject_head{
+        margin-bottom: 12px;
+    }
+    .amount_pf_reviews{
+        font-size: 12px;
+    }
+    .person_info{
+        margin-left: 10px;
+    }
+    .person_account_svg{
+        height: 44px;
+        width: 44px;
+    }
+    .nav_circles{
+        display: block;
+    }
     .place-name {
         margin-top: 8px;
         font-size: 12px;
@@ -426,7 +460,8 @@
         font-weight: 400;
         line-height: 14px;
     }
-    .sign-up_install a{
+
+    .sign-up_install a {
         color: #3077C6;
         font-weight: 500;
         font-size: 14px;
