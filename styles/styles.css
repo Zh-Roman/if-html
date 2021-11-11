@@ -84,10 +84,12 @@ html, body {
     display: flex;
     align-items: center;
 }
-.burger-checkbox{
+
+.burger-checkbox {
     display: none;
 }
-.burger-btn{
+
+.burger-btn {
     display: none;
 }
 
@@ -142,6 +144,7 @@ html, body {
     height: 40px;
     width: 40px;
 }
+
 /*---------Main-----------------------------------------------------------------*/
 .page {
     flex: 1 1 auto;
@@ -151,10 +154,6 @@ html, body {
     min-height: 100vh;
     background: url("../images/Main_Block/background_cover.jpg") center no-repeat;
     background-size: cover;
-}
-
-.main-block {
-
 }
 
 .main-block__container {
@@ -168,9 +167,6 @@ html, body {
     line-height: calc(58.59 / 50 * 100%);
     font-weight: 500;
     margin-bottom: 145px;
-}
-
-.main-block__form {
 }
 
 .main-block__search {
@@ -431,7 +427,7 @@ html, body {
 
 .content__img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
 .place-name {
@@ -507,6 +503,7 @@ html, body {
     align-items: center;
     justify-content: center;
     position: relative;
+    width: 100%;
 }
 
 .reservation__shadow {
@@ -540,6 +537,10 @@ html, body {
     opacity: 1;
 }
 
+.destinations__arrow-right {
+    display: none;
+}
+
 .sign-up_section {
     max-width: 1232px;
     padding: 24px 24px 52px 24px;
@@ -555,6 +556,24 @@ html, body {
 .close-svg {
     height: 26px;
     width: 26px;
+}
+
+.sign-up_logo {
+    margin: 0 16px;
+    background-color: #3077C6;
+    height: 58px;
+    width: 58px;
+    border-radius: 4px;
+}
+
+.sign-up_section_adaptive {
+    display: none;
+}
+
+.sign-up_logo-svg {
+    fill: #FFFFFF;
+    height: 11px;
+    width: 53px;
 }
 
 .sign-up_content {

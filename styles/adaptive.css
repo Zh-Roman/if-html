@@ -7,6 +7,7 @@
         margin-top: 0;
         padding: 12px 16px;
     }
+
     .night-svg {
         margin-left: 16px;
         height: 16px;
@@ -87,22 +88,26 @@
         line-height: 22px;
     }
 
-    .burger-checkbox:checked ~ .burger_menu{
+    .burger-checkbox:checked ~ .burger_menu {
         height: 50px;
     }
 
-    .burger-checkbox:checked ~ .first{
+    .burger-checkbox:checked ~ .first {
         display: none;
     }
-    .burger-checkbox:checked ~ .second{
+
+    .burger-checkbox:checked ~ .second {
         transform: rotate(45deg);
     }
-    .burger-checkbox:checked ~ .third{
+
+    .burger-checkbox:checked ~ .third {
         transform: rotate(-45deg);
     }
-    .burger-checkbox:checked ~ .fourth{
+
+    .burger-checkbox:checked ~ .fourth {
         display: none;
     }
+
     .main-block__container {
         min-height: 100vh;
         padding: 80px 16px 40px;
@@ -281,16 +286,19 @@
         margin: 32px 0 0;
     }
 
-    .section__body .homes__content:nth-of-type(1n+3) {
+    .section__body .homes__content:nth-of-type(1n+3),
+    .section__body .destinations__content:nth-of-type(1n+3) {
         display: none;
 
     }
 
-    .section__body .homes__content:first-of-type {
+    .section__body .homes__content:first-of-type,
+    .section__body .destinations__content:first-of-type {
         margin-right: 16px;
     }
 
-    .homes__content {
+    .homes__content,
+    .destinations__content {
         padding: 0;
         flex: 0 1 50%;
     }
@@ -314,7 +322,8 @@
     }
 
     .arrow-right {
-        transform: translateX(-50%);
+        top: 50%;
+        transform: translate(-50%, -100%);
     }
 
     .advantages__container {
@@ -339,6 +348,93 @@
         margin-bottom: 16px;
         height: 70px;
         width: 70px;
+    }
+
+    .tabs span {
+        display: none;
+    }
+
+    .tabs {
+        width: 100%;
+        line-height: 32px;
+        display: flex;
+        margin: 32px 0 24px;
+        background-color: unset;
+        justify-content: space-between;
+    }
+
+    .tabs div:not(:first-child) {
+        border: 1px solid #F3F3F4;
+    }
+
+    .tabs div {
+        max-width: 98px;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 22px;
+        padding: 5px 0;
+        border-radius: 4px;
+    }
+
+    ._button a {
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+    ._button {
+        max-height: 34px;
+        max-width: 98px;
+        border-radius: 4px;
+        line-height: 22px;
+        padding: 5px 0;
+    }
+
+    .destinations__arrow-right {
+        display: block;
+    }
+
+    .arrow-down {
+        display: none;
+    }
+
+    .page__reviews {
+        background-color: #EAF0F9;
+    }
+
+    .sign-up_section {
+        display: none;
+    }
+
+    .sign-up_section_adaptive {
+        background-color: #FFFFFF;
+        padding: 24px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sign-up_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .sign-up_info {
+        margin-right: 16px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+    .sign-up_install a{
+        color: #3077C6;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .close-svg {
+        height: 16px;
+        width: 16px;
     }
 
     /*Footer*************************/
