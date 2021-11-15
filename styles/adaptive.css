@@ -1,7 +1,277 @@
 @media only screen and (max-width: 768px) {
-    .advantages__container {
-        padding: 40px 73px;
+    ._container {
+        padding: 40px 16px;
     }
+
+    .header__container {
+        margin-top: 0;
+        padding: 12px 16px;
+    }
+
+    .night-svg {
+        margin-left: 16px;
+        height: 16px;
+        width: 16px;
+    }
+
+    .account-svg {
+        fill: #FFFFFF;
+        margin-left: 16px;
+        height: 24px;
+        width: 24px;
+    }
+
+    .header__logo-svg {
+        height: 24px;
+        width: 122px;
+    }
+
+    .menu__list {
+        display: none;
+    }
+
+    .burger-btn {
+        display: block;
+        margin-left: 16px;
+        position: relative;
+        height: 24px;
+        width: 24px;
+    }
+
+    .burger_action {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    .burger-line {
+        position: absolute;
+        top: 4px;
+        right: 0;
+        width: 24px;
+        height: 2px;
+        background-color: #FFFFFF;
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .second,
+    .third {
+        top: 11px;
+    }
+
+    .fourth {
+        top: 18px;
+    }
+
+    .burger_menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 120%;
+        left: 0;
+        transform: translateX(-75%);
+        text-align: right;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .burger_menu a {
+        text-decoration: underline;
+        text-decoration-color: #F5BD41;
+        text-decoration-thickness: 2px;
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    .burger-checkbox:checked ~ .burger_menu {
+        height: 50px;
+    }
+
+    .burger-checkbox:checked ~ .first {
+        display: none;
+    }
+
+    .burger-checkbox:checked ~ .second {
+        transform: rotate(45deg);
+    }
+
+    .burger-checkbox:checked ~ .third {
+        transform: rotate(-45deg);
+    }
+
+    .burger-checkbox:checked ~ .fourth {
+        display: none;
+    }
+
+    .main-block__container {
+        min-height: 100vh;
+        padding: 80px 16px 40px;
+    }
+
+    .main-block__title {
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    .main-block__search {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        border: 4px #F5BD41 solid;
+        border-radius: 0;
+        background-color: #F5BD41;
+        margin-bottom: 30px;
+
+    }
+
+    .search_destination {
+        background-color: #FFFFFF;
+        border: 4px #F5BD41 solid;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 15px;
+        position: relative;
+
+    }
+
+    .search_destination input {
+        margin: 0;
+        padding: 0 40px 0 0;
+    }
+
+    .searching-svg {
+        display: block;
+        height: 16px;
+        width: 16px;
+        margin: 0 12px;
+    }
+
+    .placeholder-color::placeholder {
+        color: #383838;
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        text-align: center;
+
+    }
+
+    .placeholder-color:focus::placeholder {
+        color: #FFFFFF;
+    }
+
+    .label__destinations-text {
+        display: none;
+    }
+
+    .search-dates span {
+        display: none;
+    }
+
+    .search-dates {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+    }
+
+    .check-in-day,
+    .check-out-day,
+    .check-out-day option,
+    .check-in-day option,
+    .check-in-month,
+    .check-in-month option,
+    .check-out-month,
+    .check-out-month option {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .search_check-in,
+    .search_check-out {
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 4px #F5BD41 solid;
+        border-radius: 8px;
+    }
+
+    .check-in-lists,
+    .check-out-lists {
+        order: 2;
+        display: flex;
+    }
+
+    .check-in__label,
+    .check-out__label {
+        order: 1;
+        position: static;
+        background-color: #FFFFFF;
+        color: #383838;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+
+    .search_condition {
+        padding: 0;
+        background-color: #FFFFFF;
+        border: 4px #F5BD41 solid;
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .search_condition span {
+        display: none;
+    }
+
+    .adults-number,
+    .children-number,
+    .room-number {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        padding-left: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .children-number {
+        border-left: 1px solid #BFBFBF;
+        border-right: 1px solid #BFBFBF;
+    }
+
+    .condition-input {
+        padding: -6px;
+        order: 2;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .search_button {
+        margin: 0;
+        border: 4px #F5BD41 solid;
+        border-radius: 8px;
+    }
+
+    .search_button button {
+        font-size: 19px;
+        line-height: 22px;
+    }
+
 
     ._section__title {
         font-size: 28px;
@@ -13,7 +283,85 @@
     }
 
     .section__body {
-        margin: 32px 0 0 0;
+        margin: 32px 0 0;
+    }
+
+    .section__body .homes__content:nth-of-type(1n+3),
+    .section__body .destinations__content:nth-of-type(1n+3) {
+        display: none;
+
+    }
+
+    .section__body .reviews__content:nth-of-type(1n+2) {
+        display: none;
+    }
+
+    .section__body .homes__content:first-of-type,
+    .section__body .destinations__content:first-of-type {
+        margin-right: 16px;
+    }
+
+    .homes__content,
+    .destinations__content {
+        padding: 0;
+        flex: 0 1 50%;
+    }
+    .reviews__section__body{
+        display: flex;
+    }
+    .reviews__content{
+        padding: 0;
+        flex: 0 1 100%;
+    }
+    .reviews_price{
+        display: none;
+    }
+    .reviews_subject{
+        padding: 12px 0 32px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .subject_head{
+        margin-bottom: 12px;
+    }
+    .amount_pf_reviews{
+        font-size: 12px;
+    }
+    .person_info{
+        margin-left: 10px;
+    }
+    .person_account_svg{
+        height: 44px;
+        width: 44px;
+    }
+    .nav_circles{
+        display: block;
+    }
+    .place-name {
+        margin-top: 8px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .place-location {
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 14px;
+
+    }
+
+    .arrow_svg {
+        height: 35px;
+        width: 35px;
+    }
+
+    .arrow-right {
+        top: 50%;
+        transform: translate(-50%, -100%);
+    }
+
+    .advantages__container {
+        padding: 40px 73px;
     }
 
     .advantages__section__body {
@@ -36,6 +384,94 @@
         width: 70px;
     }
 
+    .tabs span {
+        display: none;
+    }
+
+    .tabs {
+        width: 100%;
+        line-height: 32px;
+        display: flex;
+        margin: 32px 0 24px;
+        background-color: unset;
+        justify-content: space-between;
+    }
+
+    .tabs div:not(:first-child) {
+        border: 1px solid #F3F3F4;
+    }
+
+    .tabs div {
+        max-width: 98px;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 22px;
+        padding: 5px 0;
+        border-radius: 4px;
+    }
+
+    ._button a {
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+    ._button {
+        max-height: 34px;
+        max-width: 98px;
+        border-radius: 4px;
+        line-height: 22px;
+        padding: 5px 0;
+    }
+
+    .destinations__arrow-right {
+        display: block;
+    }
+
+    .arrow-down {
+        display: none;
+    }
+
+    .page__reviews {
+        background-color: #EAF0F9;
+    }
+
+    .sign-up_section {
+        display: none;
+    }
+
+    .sign-up_section_adaptive {
+        background-color: #FFFFFF;
+        padding: 24px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sign-up_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .sign-up_info {
+        margin-right: 16px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+
+    .sign-up_install a {
+        color: #3077C6;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .close-svg {
+        height: 16px;
+        width: 16px;
+    }
+
     /*Footer*************************/
     .footer__container {
         padding: 40px 73px;
@@ -45,22 +481,27 @@
         display: block;
         margin: 0 auto 40px;
     }
-    .footer__content:not(:last-child){
+
+    .footer__content:not(:last-child) {
         margin-right: 16px;
 
     }
-    .footer__content{
+
+    .footer__content {
         text-align: center;
         text-decoration: underline;
     }
-    .footer__content p{
+
+    .footer__content p {
         font-size: 15px;
         line-height: 18px;
     }
-    .footer__content li:nth-of-type(1n+2){
+
+    .footer__content li:nth-of-type(1n+2) {
         display: none;
     }
-    .copyright{
+
+    .copyright {
         display: flex;
         justify-content: center;
         margin-top: 32px;

@@ -37,7 +37,7 @@ html, body {
     font-family: Roboto, sans-serif;
 }
 
-    /*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
 .wrapper {
     min-height: 100%;
     overflow: hidden;
@@ -69,7 +69,12 @@ html, body {
     justify-content: space-between;
 }
 
-.header__logo {
+.header__logo a {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-svg {
     fill: #3077C6;
     width: 205px;
     height: 40px;
@@ -78,6 +83,14 @@ html, body {
 .header__menu {
     display: flex;
     align-items: center;
+}
+
+.burger-checkbox {
+    display: none;
+}
+
+.burger-btn {
+    display: none;
 }
 
 .menu__list {
@@ -112,20 +125,22 @@ html, body {
 }
 
 .night-icon {
-    margin-left: 24px;
+    display: flex;
 }
 
 .night-svg {
+    margin-left: 24px;
     height: 30px;
     width: 30px;
 }
 
 .account-icon {
-    margin-left: 24px;
+    display: flex;
 }
 
 .account-svg {
     fill: #FFFFFF;
+    margin-left: 24px;
     height: 40px;
     width: 40px;
 }
@@ -141,10 +156,6 @@ html, body {
     background-size: cover;
 }
 
-.main-block {
-
-}
-
 .main-block__container {
     min-height: 100vh;
     padding-top: 296px;
@@ -156,9 +167,6 @@ html, body {
     line-height: calc(58.59 / 50 * 100%);
     font-weight: 500;
     margin-bottom: 145px;
-}
-
-.main-block__form {
 }
 
 .main-block__search {
@@ -181,6 +189,10 @@ html, body {
 
 }
 
+.searching-svg {
+    display: none;
+}
+
 .search_destination input {
     width: 100%;
     font-size: 18px;
@@ -188,6 +200,10 @@ html, body {
     font-family: Roboto, sans-serif;
     margin: 0 24px;
     padding-left: 5px;
+}
+
+.placeholder-color::placeholder {
+    color: #FFFFFF;
 }
 
 .label__destinations-text {
@@ -323,6 +339,7 @@ html, body {
 }
 
 .main-block__apps {
+    line-height: 0;
     display: flex;
     justify-content: center;
 }
@@ -410,7 +427,7 @@ html, body {
 
 .content__img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
 .place-name {
@@ -430,6 +447,7 @@ html, body {
 }
 
 .arrow-right {
+    line-height: 0;
     position: absolute;
     left: 100%;
     top: 30%;
@@ -485,6 +503,7 @@ html, body {
     align-items: center;
     justify-content: center;
     position: relative;
+    width: 100%;
 }
 
 .reservation__shadow {
@@ -518,6 +537,10 @@ html, body {
     opacity: 1;
 }
 
+.destinations__arrow-right {
+    display: none;
+}
+
 .sign-up_section {
     max-width: 1232px;
     padding: 24px 24px 52px 24px;
@@ -533,6 +556,24 @@ html, body {
 .close-svg {
     height: 26px;
     width: 26px;
+}
+
+.sign-up_logo {
+    margin: 0 16px;
+    background-color: #3077C6;
+    height: 58px;
+    width: 58px;
+    border-radius: 4px;
+}
+
+.sign-up_section_adaptive {
+    display: none;
+}
+
+.sign-up_logo-svg {
+    fill: #FFFFFF;
+    height: 11px;
+    width: 53px;
 }
 
 .sign-up_content {
@@ -642,10 +683,6 @@ html, body {
     font-size: 14px;
 }
 
-.subject_body {
-
-}
-
 .subject_person {
     display: flex;
     align-items: center;
@@ -688,6 +725,17 @@ html, body {
     transform: translateX(-50%);
 }
 
+.nav_circles {
+    display: none;
+    line-height: 10px;
+}
+
+.nav_circles_svg {
+    fill: #EAF0F9;
+    height: 8px;
+    width: 56px;
+}
+
 /*---------Footer-----------------------------------------------------------------*/
 .footer {
     background-color: #10367C;
@@ -697,12 +745,14 @@ html, body {
 .footer__body {
     display: flex;
 }
-.footer__logo{
+
+.footer__logo {
     display: none;
     fill: #FFFFFF;
     height: 19px;
     width: 98px;
 }
+
 .footer__content {
     flex: 0 1 33.333%;
     justify-content: space-between;
